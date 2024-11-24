@@ -1,0 +1,98 @@
+plugins {
+    id 'java'
+    id 'application'
+    id 'org.openjfx.javafxplugin' version '0.0.10'
+    id 'org.beryx.jlink' version '2.25.0'
+}
+
+group = 'edu.uoc.locuocomotive'
+version = '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+}
+
+ext {
+    junitVersion = '5.9.2'
+}
+
+application {
+    mainModule = 'edu.uoc.locuocomotive'
+    mainClass = 'edu.uoc.locuocomotive.LocUOComotive'
+}
+
+javafx {
+    version = '21-ea+24'
+    modules = ['javafx.controls', 'javafx.fxml']
+}
+
+dependencies {
+    testImplementation platform('org.junit:junit-bom:5.9.1')
+    testImplementation 'org.junit.jupiter:junit-jupiter'
+}
+
+javadoc{
+    options.memberLevel = JavadocMemberLevel.PRIVATE
+    options.encoding = "UTF-8"
+    options.author = true
+    destinationDir = file("docs")
+}
+
+test {
+    useJUnitPlatform()
+}
+
+tasks.register('testBasic', Test) {
+    group = "Verification"
+    useJUnitPlatform {
+        includeTags "basic"
+    }
+}
+
+tasks.register('testAdvanced', Test) {
+    group = "Verification"
+    useJUnitPlatform {
+        includeTags "advanced"
+    }
+}
+
+tasks.register('testSpecial', Test) {
+    group = "Verification"
+    useJUnitPlatform {
+        includeTags "special"
+    }
+}
+
+tasks.register('testAll', Test) {
+    group = "Verification"
+    useJUnitPlatform {
+        includeTags "basic", "advanced", "special"
+    }
+}
+
+//Uncomment task "jar" if you want to create a fat jar (i.e. classes + dependencies).
+//If you generate a fat jar, then the user's computer must have JRE.
+/*jar {
+    manifest {
+        attributes (
+                'Main-Class' : 'edu.uoc.locuocomotive.Main'
+        )
+    }
+    from {
+        configurations.runtimeClasspath.collect {
+            it.isDirectory() ? it : zipTree(it) }
+    } {
+        duplicatesStrategy = DuplicatesStrategy.EXCLUDE
+    }
+}*/
+
+//If you want to create a Runtime image with jlink, then
+//you must comment the previous task "jar" and uncomment the
+//following tasks: "jlink" and "jlinkZip"
+/*jlink {
+   // imageZip = project.file("${buildDir}/distributions/app-${javafx.platform.classifier}.zip")
+    options = ['--strip-debug', '--compress', '2', '--no-header-files', '--no-man-pages']
+    launcher {
+        name = 'LocUOComotive'
+    }
+}*/
