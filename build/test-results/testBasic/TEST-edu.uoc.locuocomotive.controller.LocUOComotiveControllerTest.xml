@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="edu.uoc.locuocomotive.controller.LocUOComotiveControllerTest" tests="4" skipped="0" failures="0" errors="0" timestamp="2024-06-17T09:36:38" hostname="POLERO-PC" time="0.073">
+  <properties/>
+  <testcase name="Basic - addPassenger" classname="edu.uoc.locuocomotive.controller.LocUOComotiveControllerTest" time="0.046"/>
+  <testcase name="Basic - addStation" classname="edu.uoc.locuocomotive.controller.LocUOComotiveControllerTest" time="0.01"/>
+  <testcase name="Basic - addTrain" classname="edu.uoc.locuocomotive.controller.LocUOComotiveControllerTest" time="0.008"/>
+  <testcase name="Basic - getSeatTypes" classname="edu.uoc.locuocomotive.controller.LocUOComotiveControllerTest" time="0.005"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

@@ -1,0 +1,119 @@
+.bg-play {
+    -fx-background-image: url('../images/map.jpg'); -fx-background-size: cover; -fx-background-position: center;
+}
+
+.bg-logo {
+    -fx-background-image: url('../images/logo.jpg'); -fx-background-size: cover; -fx-background-position: center;
+}
+
+.bg-credits {
+    -fx-background-image: url('../images/credits.jpg'); -fx-background-size: cover; -fx-background-position: center;
+}
+
+.station-button {
+    -fx-background-color: #FF0000;
+    -fx-background-radius: 50%;
+    -fx-border-color: #000000;
+    -fx-border-radius: 50%;
+    -fx-border-width: 2;
+    -fx-min-width: 15px;
+    -fx-min-height: 15px;
+    -fx-max-width: 15px;
+    -fx-max-height: 15px;
+    -fx-text-fill: transparent;
+    -fx-transition: background-color 0.3s ease-in-out;
+}
+
+.station-button:hover {
+    -fx-background-color: #FFFF00;
+}
+
+.station-button:pressed {
+    -fx-background-color: #AD3800;
+}
+
+.station-button:disabled {
+    -fx-background-color: #00DB0E;
+    -fx-opacity: 1;
+}
+
+.station-tooltip {
+    -fx-text-fill: black;
+    -fx-background-color: white;
+    -fx-border-color: black;
+    -fx-border-radius: 5;
+    -fx-padding: 5;
+    -fx-alignment: center;
+}
+
+.station-name {
+    -fx-fill: black;
+    -fx-font-weight: bold;
+    -fx-font-size: 14px;
+    -fx-alignment: center;
+}
+
+.city-name {
+    -fx-fill: gray;
+    -fx-font-size: 12px;
+    -fx-text-alignment: center;
+}
+
+.message-box {
+    -fx-background-color: white;
+    -fx-border-color: black;
+    -fx-border-radius: 5;
+    -fx-padding: 5;
+    -fx-alignment: center;
+    -fx-font-size: 20px;
+    -fx-font-weight: bold;
+    -fx-translate-x: -50%;
+    -fx-translate-y: -50%;
+}
+
+.table-container {
+    -fx-alignment: top-right;
+}
+
+.close-table-button {
+    -fx-background-color: #FF0000;
+    -fx-text-fill: #FFFFFF;
+    -fx-font-weight: bold;
+    -fx-border-radius: 5;
+    -fx-padding: 5;
+}
+
+#arrowPolygon {
+    -fx-fill: #00DB0E;
+    -fx-stroke: black;
+    -fx-stroke-width: 2;
+}
+
+.form-pane {
+    -fx-background-color: white;
+    -fx-border-color: black;
+    -fx-border-radius: 10;
+    -fx-padding: 20;
+    -fx-alignment: center;
+    -fx-pref-width: 400;
+}
+
+.form-input {
+    -fx-padding: 0 10;
+}
+
+.form-title {
+    -fx-font-size: 20px;
+    -fx-font-weight: bold;
+    -fx-padding: 10px;
+}
+
+
+.custom-vbox{
+
+}
+
+.custom-hyperlink{
+    -fx-border-style: none;
+    -fx-border-width: 0px;
+}

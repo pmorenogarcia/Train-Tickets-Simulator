@@ -1,0 +1,8 @@
+1|Barcelona Sants|Barcelona|1975|UNDERGROUND|barcelona.jpg|200|402
+2|Madrid Atocha|Madrid|1851|OVERGROUND|madrid.jpg|147|410
+3|Gare du Nord|Paris|1846|OVERGROUND|paris.jpg|199|310
+4|Berlin Hauptbahnhof|Berlin|2006|ELEVATED|berlin.jpg|291|261
+5|Hamburg Hauptbahnhof|Hamburg|1906|OVERGROUND|hamburg.jpg|260|248
+6|Milano Centrale|Milan|1931|OVERGROUND|milan.jpg|259|353
+7|Roma Termini|Roma|1963|OVERGROUND|roma.jpg|294|397
+8|Warszawa Centralna|Warsaw|1967|UNDERGROUND|warsaw.jpg|350|261

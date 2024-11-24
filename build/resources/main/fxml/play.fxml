@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.shape.Polygon?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.control.ComboBox?>
+<Pane prefHeight="500" prefWidth="650" stylesheets="@../styles/styles.css" styleClass="bg-play" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="edu.uoc.locuocomotive.view.PlayViewController">
+    <Label text="Choose your next trip!" styleClass="message-box" layoutX="215" layoutY="30"/>
+    <Pane fx:id="playPane" prefHeight="500" prefWidth="650">
+        <Polygon fx:id="arrowPolygon" visible="false"/>
+    </Pane>
+    <HBox fx:id="tableContainer" layoutX="50" layoutY="100" prefHeight="350" prefWidth="550" visible="false">
+        <TableView fx:id="stationTable" HBox.hgrow="ALWAYS" />
+        <Button fx:id="closeTableButton" text="X" />
+    </HBox>
+    <AnchorPane fx:id="formPane" styleClass="form-pane" visible="false">
+        <StackPane>
+            <VBox alignment="CENTER">
+                <Label text="Passenger details" styleClass="form-title" />
+                <Label text="Passport:" />
+                <TextField fx:id="passportField" styleClass="form-input" />
+
+                <Label text="Name:" />
+                <TextField fx:id="nameField" styleClass="form-input" />
+
+                <Label text="Surname:" />
+                <TextField fx:id="surnameField" styleClass="form-input" />
+
+                <Label text="Birthdate:" />
+                <DatePicker fx:id="birthdatePicker" styleClass="form-input" />
+
+                <Label text="Email (optional):" />
+                <TextField fx:id="emailField" styleClass="form-input" />
+
+                <Label text="Seat class:" />
+                <ComboBox fx:id="classComboBox" styleClass="form-input" />
+
+                <Button fx:id="submitButton" text="Travel" />
+            </VBox>
+        </StackPane>
+    </AnchorPane>
+    <Button fx:id="myTravelsButton" text="My travels" layoutX="550" layoutY="10"/>
+    <HBox fx:id="ticketContainer" layoutX="50" layoutY="100" prefHeight="350" prefWidth="550" visible="false">
+        <TableView fx:id="ticketTable" HBox.hgrow="ALWAYS" />
+        <Button fx:id="closeTicketButton" text="X" />
+    </HBox>
+</Pane>

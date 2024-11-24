@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.layout.VBox?>
+
+<AnchorPane prefHeight="500" prefWidth="650" styleClass="bg-credits" stylesheets="@../styles/styles.css"
+            xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="edu.uoc.locuocomotive.view.CreditsViewController">
+    <Label alignment="CENTER" contentDisplay="CENTER" layoutX="310.0" layoutY="50.0" styleClass="credits-title"
+           text="Credits"/>
+
+    <Label alignment="TOP_CENTER" layoutX="97.0" layoutY="147.0" prefHeight="300.0" prefWidth="459.0"
+           styleClass="credits-text" text="This game was made by Pol Moreno Garcia with love." textAlignment="CENTER">
+        Read these instructions very carefully!!
+    </Label>
+    <VBox alignment="CENTER" layoutX="97.0" layoutY="147.0" prefHeight="100.0" prefWidth="459.0"
+          styleClass="custom-vbox" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+        <Hyperlink styleClass="custom-hyperlink" fx:id="emailLink" textAlignment="CENTER" text="pmorenogarcia@uoc.edu"/>
+    </VBox>
+    <Button layoutX="315" layoutY="365" onMouseClicked="#backMain" styleClass="btn" text="Back"
+            textAlignment="CENTER"/>
+</AnchorPane>

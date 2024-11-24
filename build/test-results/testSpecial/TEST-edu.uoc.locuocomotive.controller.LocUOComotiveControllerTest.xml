@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="edu.uoc.locuocomotive.controller.LocUOComotiveControllerTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2024-06-13T09:47:32" hostname="POLERO-PC" time="0.049">
+  <properties/>
+  <testcase name="Special - getRoutesByStation" classname="edu.uoc.locuocomotive.controller.LocUOComotiveControllerTest" time="0.049"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
